@@ -1,27 +1,16 @@
-# Matplotlib 3.1.0 with Python 3.7.3 on Alpine Linux 3.9.4
+# Matplotlib 3.1.0 with Python 3.7.3 on Alpine Linux 3.10
 
-[![](https://img.shields.io/docker/build/czentye/matplotlib-minimal.svg?style=popout)](https://hub.docker.com/r/czentye/matplotlib-minimal)
-[![](https://img.shields.io/docker/pulls/czentye/matplotlib-minimal.svg?style=popout)](https://hub.docker.com/r/czentye/matplotlib-minimal)
-[![](https://img.shields.io/microbadger/image-size/czentye%2Fmatplotlib-minimal.svg?style=popout)](https://hub.docker.com/r/czentye/matplotlib-minimal)
-
-János Czentye, HSNLab@BME
-
-2019 May
+[![](https://img.shields.io/docker/build/bxio/matplotlib-minimal.svg?style=popout)](https://hub.docker.com/r/bxio/matplotlib-minimal)
+[![](https://img.shields.io/docker/pulls/bxio/matplotlib-minimal.svg?style=popout)](https://hub.docker.com/r/bxio/matplotlib-minimal)
+[![](https://img.shields.io/microbadger/image-size/bxio%2Fmatplotlib-minimal.svg?style=popout)](https://hub.docker.com/r/bxio/matplotlib-minimal)
 
 ### Description
 
-This repository provides a Dockerfile for building and image for Matplotlib 3.1.0
-with Python3.7. Matplotlib is compiled from source using Python pip tool and PyPI
-repository version: https://pypi.org/project/matplotlib/
+This repository provides a Dockerfile for building and image for Matplotlib 3.1.0 with Python 3.7. Matplotlib is compiled from its [PyPI source](https://pypi.org/project/matplotlib/) using [pip](https://pip.pypa.io/en/stable/).
 
-https://github.com/matplotlib/matplotlib/releases
+The Docker image is based on the latest [Alpine Linux](https://alpinelinux.org) version for size optimization (~140MB). It uses [Alpine packages](https://pkgs.alpinelinux.org/packages) from the main and community repos.
 
-The Docker image is based on the latest Alpine Linux 3.9 for a minimum size 
-image(~140MB). It uses Alpine packages from main and community repos.
-
-https://alpinelinux.org/
-
-Older versions can be found under different tags.
+Older builds can be found under different docker image tags.
 
 ### Configuration
 
@@ -65,13 +54,10 @@ Matplotlib compiled with the following configuration:
 
 ### Download
 
-To get the image use ``sudo docker pull czentye/matplotlib-minimal``
+To get the image, run ``docker pull bxio/matplotlib-minimal``
 
-### Run
-
-To run Python with Matplotlib use the following command ``sudo docker run -ti czentye/matplotlib-minimal python``
 
 ### License
 
-Licensed under MIT license, see LICENSE file.
+[![MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 

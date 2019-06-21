@@ -1,21 +1,21 @@
 ################################################################################
 ##    Dockerfile to build minimal Matplotlib image with Python3 and Numpy     ##
 ################################################################################
-FROM alpine:3.9.4
+FROM alpine:3.10
 
-LABEL MAINTAINER="Janos Czentye <czentye@tmit.bme.hu>"
+LABEL MAINTAINER="Bill Xiong <bill@billxiong.com>"
 ENV LANG=C.UTF-8
 ARG MATPLOTLIB_VERSION=3.1.0
 
 # Build dependencies
 RUN apk add --repository http://dl-cdn.alpinelinux.org/alpine/edge/main \
-            --update --no-cache python3 python3-dev libgfortran && \
+            --update --no-cache git python3 python3-dev libgfortran && \
     apk add --repository http://dl-cdn.alpinelinux.org/alpine/edge/community \
             --update --no-cache py-numpy py-numpy-dev && \
     apk add --update --no-cache build-base libstdc++ \
                                 libpng libpng-dev \
                                 freetype freetype-dev && \
-    # Update musl to workaround a bug
+    # Update musl to work around a bug
     apk upgrade --repository http://dl-cdn.alpinelinux.org/alpine/edge/main musl && \
     # Make Python3 as default
     ln -fs /usr/include/locale.h /usr/include/xlocale.h && \
