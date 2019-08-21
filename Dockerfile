@@ -1,7 +1,7 @@
 ################################################################################
 ##    Dockerfile to build minimal Matplotlib image with Python3 and Numpy     ##
 ################################################################################
-FROM alpine:3.10
+FROM alpine:3.10.2
 
 LABEL MAINTAINER="Bill Xiong <bill@billxiong.com>"
 ENV LANG=C.UTF-8

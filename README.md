@@ -1,4 +1,4 @@
-# Matplotlib 3.1.1 with Python 3.7.3 on Alpine Linux 3.10
+# Matplotlib 3.1.1 with Python 3.7.3 on Alpine Linux 3.10.2
 
 [![](https://img.shields.io/docker/build/bxio/matplotlib-minimal.svg?style=popout)](https://hub.docker.com/r/bxio/matplotlib-minimal)
 [![](https://img.shields.io/docker/pulls/bxio/matplotlib-minimal.svg?style=popout)](https://hub.docker.com/r/bxio/matplotlib-minimal)
